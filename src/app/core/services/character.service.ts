@@ -8,7 +8,7 @@ import { environment } from 'src/environments/environment';
 export class CharacterService {
   _query = new Subject<string>();
 
-  readonly API = environment.baseUrl;
+  readonly API = `${environment.baseUrl}/character`;
 
   private query: string = '';
   private url?: string;

@@ -9,11 +9,11 @@
 
 .btn-favorite:hover,
 .btn-favorite:active {
-  color: $dark !important;
+  color: $black !important;
 }
 
 .card {
-  background-color: $dark;
+  background-color: $black;
   border-color: $gray;
   overflow: hidden;
   transform: scale(1);
@@ -43,7 +43,7 @@ cursor: pointer;
 }
 
 .card.active .btn-favorite {
-  color: $dark !important;
+  color: $black !important;
 }
 
 h3.card-title {
