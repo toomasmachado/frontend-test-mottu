@@ -33,14 +33,12 @@ export class CharacterListComponent implements OnInit, OnDestroy {
   }
 
   handleSearchInput(target: any): void {
-    if (target?.value.length > 2 || target?.value.length == 0) {
       const res = this.characterService.searchCharacter(target?.value)
         .subscribe(characters => {
           this.characters = characters;
           console.log(this.characters);
           res.unsubscribe();
         });
-    }
   }
 
   onScroll() {

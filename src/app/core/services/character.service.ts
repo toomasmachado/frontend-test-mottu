@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable, Subject, catchError, map, of, switchMap } from 'rxjs';
+import { Observable, Subject, catchError, debounce, interval, map, of, switchMap } from 'rxjs';
 import { Character } from '../interfaces/character.interface';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
@@ -28,6 +28,7 @@ export class CharacterService {
     this._query.next(characterName);
 
     return this._query.pipe(
+      debounce(() => interval(200)),
       switchMap(characterName => {
         this.query = characterName;
         return this.searchCharacters(this.query).pipe(
