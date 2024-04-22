@@ -2,12 +2,13 @@ import { Injectable } from '@angular/core';
 import { Observable, Subject, catchError, map, of, switchMap } from 'rxjs';
 import { Character } from '../interfaces/character.interface';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
 
 @Injectable({ providedIn: 'root' })
 export class CharacterService {
   _query = new Subject<string>();
 
-  readonly API = `https://rickandmortyapi.com/api/character`;
+  readonly API = environment.baseUrl;
 
   private query: string = '';
   private url?: string;
