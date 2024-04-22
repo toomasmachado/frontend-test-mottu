@@ -1,0 +1,35 @@
+@import 'src/styles/colors.scss';
+
+.form-group {
+  position: relative;
+}
+
+.form-group label {
+  color: $gray-light;
+}
+
+.form-control {
+  padding: 12px 24px;
+  border-color: $gray-field;
+}
+
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: $gray-field;
+}
+
+.input-placeholder {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  background-color: $black-bg;
+  padding: 0 .5rem;
+}
+
+.focused {
+  top: -10px;
+  font-size: 12px;
+}

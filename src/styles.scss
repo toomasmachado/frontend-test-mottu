@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+@import "~bootstrap/scss/_functions";
+@import "~bootstrap/scss/_variables";
+
+@import './styles/colors.scss';
+
+$body-bg: $black-bg;
+$body-color: $white-egg;
+
+$theme-colors: (
+    "dark": $dark,
+);
+
+@import "~bootstrap/scss/_maps";
+@import "~bootstrap/scss/_mixins";
+@import "~bootstrap/scss/_root";
+@import '~bootstrap/scss/bootstrap';
+
+@import "./styles/button.scss";
+@import "./styles/page.scss";

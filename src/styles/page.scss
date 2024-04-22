@@ -1,0 +1,24 @@
+.container {
+  max-width: 920px;
+  padding: 0 32px;
+}
+.container.content {
+  padding-top: 70px;
+}
+
+.page-header {
+  margin: 2rem 0;
+}
+.page-header.row>.col {
+  padding: 0;
+}
+
+h2.page-title {
+  font-family: Creepster, sans-serif !important;
+  font-size: 48px;
+  color: #00B5CC;
+  text-shadow: -2px 0 #B2DF28, 0 -2px #B2DF28, 2px 0 #B2DF28, 0 2px #B2DF28;
+}
+
+
+

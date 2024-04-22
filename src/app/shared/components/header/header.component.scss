@@ -1,0 +1,20 @@
+@import "src/styles/colors.scss";
+
+.app-header {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+.black-bg {
+  background-color: $black;
+}
+
+.badge {
+  background-color: $white;
+  border: 1px solid $gray;
+  color: $black;
+  border-radius: 12px;
+}
